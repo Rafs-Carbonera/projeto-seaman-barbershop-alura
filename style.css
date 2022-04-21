@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'Sailor' ;
+    src: url('newsailor.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* css da página "produtos" */
+
+header {
+    background: rgb(163, 162, 162);
+    padding: 20px 0;
+    font-family: 'Sailor', Times, serif;
+}
+
+.caixa {
+    position:relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+        top: 110px;
+        right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #484848;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color:whitesmoke;
+    text-decoration:underline;
+    transition: all 0.2s;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto; 
+    padding: 50px 0;
+
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+}
+
+.produtos li:hover {
+    border-color: rgb(163, 162, 162);
+}
+
+.produtos li:active {
+    border-color:crimson;
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-family: 'Sailor';
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px 0;
+}
+
+.copyrigth {
+    color: whitesmoke;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:480px) {
+    .produtos {
+        width: auto;
+        text-align: center;
+    }
+
+    .produtos li {
+        width: 90%;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    
+    
+}
+
+/* css da página "contato" */
+
+.main-contato {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #757575;
+background-image: linear-gradient(0deg, #757575 9%, #ffffff 100%);
+padding: 25px;
+}
+
+form {
+    width: 940px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.modo-contato {
+    padding: 20px 0;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 30%;
+    padding: 15px 0;
+    background-color: rgb(163, 162, 162);
+    color:whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color:rgb(110, 110, 110);
+    transform:scale(1.2);
+}
+
+table {
+    border: 1px solid;
+    width: 25% !important; 
+    margin: auto;
+   
+}
+
+thead {
+    background-color:rgb(163, 162, 162);
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+td,th {
+    border: 2px solid black;
+    padding: 8px 15px;
+}
+
+@media screen and (max-width:480px) {
+    .header-contato, form {
+        width: auto;
+    }
+
+    .enviar {
+        width: auto;
+    }
+
+}
+
+/* css da página "home" */
+
+
+.banner {
+    width: 100%;
+}
+
+.background {
+    background-color: #757575;
+background-image: linear-gradient(0deg, #757575 9%, #ffffff 100%);
+
+}
+
+
+.titulo-principal {
+    font-family: 'Sailor';
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    font-weight: bold;
+    clear: left;
+}
+
+.principal {
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding:3em 0;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios { 
+    padding: 3em 0;
+}
+
+.conteudo-beneficios {
+   width: 640px;
+   margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 2.5em;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 0.7;
+    transition: 400ms;
+    box-shadow: 10px 10px 12px black;
+}
+
+.imagem-beneficios:hover {
+    opacity: 1;
+}
+
+.itens, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.video {
+    width: 560px;
+    padding: 6em;
+    margin: 1em auto;
+}
+
+@media screen and (max-width:480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+
+    .video {
+        padding: 30px 0;
+    }
+
+    .lista-beneficios {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .principal, .mapa, .beneficios {
+        margin: 0 1em 0 1em;
+    }
+
+    ul {
+        text-align: center;
+    }
+
+}
